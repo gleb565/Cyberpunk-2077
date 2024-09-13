@@ -1,0 +1,526 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+*::-webkit-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #000;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.NavBar {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.NavBar .navbar > img {
+  margin-left: 150px;
+}
+.NavBar .navbar > ul {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.NavBar .navbar > ul > li > a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+.NavBar .navbar > ul > li > a:hover {
+  transform: translateY(-10px);
+}
+.NavBar .navbar-bottom {
+  width: 400px;
+  height: 220px;
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 250px;
+}
+.NavBar .navbar-bottom > h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+}
+.NavBar .navbar-bottom > a {
+  background-color: #000000;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  width: 175px;
+  height: 78px;
+  top: 115px;
+  left: 110px;
+  bottom: 15px;
+  padding: 19px 50px 19px;
+  color: #F8F200;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+.NavBar .navbar-bottom > a:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #F8F200;
+  border-radius: 20%;
+}
+
+.description {
+  margin-top: 50px;
+}
+.description > h1 {
+  position: absolute;
+  width: 996px;
+  height: 63px;
+  top: 750px;
+  left: 320px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 48px;
+}
+.description > p {
+  position: absolute;
+  width: 952px;
+  height: 125px;
+  top: 900px;
+  left: 320px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+}
+.description > .photo {
+  position: relative;
+}
+.description > .photo > .photo_2 {
+  position: absolute;
+  width: 788px;
+  height: 424px;
+  top: 400px;
+  right: 20px;
+}
+.description > .photo > .photo_1 {
+  position: absolute;
+  width: 460px;
+  height: 196px;
+  top: 400px;
+  left: 100px;
+}
+.description > .photo > .photo_3 {
+  position: absolute;
+  width: 460px;
+  height: 196px;
+  top: 650px;
+  left: 100px;
+}
+.description > .photo .HeaderBottom {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 900px;
+}
+
+.Send {
+  position: relative;
+  width: 1920px;
+  height: 814px;
+  background-color: #000;
+  top: 940px;
+}
+.Send .NavOfSection > img {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  top: 50px;
+  left: 220px;
+}
+.Send .NavOfSection > h1 {
+  position: absolute;
+  font-family: Archangelsk;
+  font-size: 62px;
+  font-weight: 700;
+  color: #FFF;
+  top: 80px;
+  left: 400px;
+}
+.Send .NavOfSection > p {
+  position: absolute;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFF;
+  width: 952px;
+  height: 91px;
+  top: 200px;
+  left: 220px;
+}
+.Send .SendForm {
+  position: absolute;
+  top: 300px;
+  left: 220px;
+}
+.Send .SendForm > input {
+  outline: none;
+  display: block;
+  width: 460px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  padding: 14px 24px;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+}
+.Send .UploadForm {
+  position: relative;
+}
+.Send .UploadForm > input {
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.Send .UploadForm > label {
+  display: inline-block;
+  padding: 40px 20px;
+  background: transparent;
+  border: 1px dashed #777777;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 460px;
+  height: 120px;
+  text-align: center;
+}
+.Send .UploadForm > label > ul {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+}
+.Send .UploadForm .btn {
+  position: absolute;
+  width: 192px;
+  height: 59px;
+  top: 200px;
+  left: 0px;
+  padding: 15px 50px 15px 50px;
+  gap: 10px;
+  background-color: #F8F200;
+  transition: all 0.4s ease;
+}
+.Send .UploadForm .btn:hover {
+  cursor: pointer;
+  background-color: #c5c000;
+  color: #F8F200;
+  border-radius: 20%;
+}
+.Send .UploadForm .btn > a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.Send .UploadForm .checkbox {
+  position: absolute;
+  left: 0px;
+  top: 275px;
+}
+.Send .UploadForm .checkbox > input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.Send .UploadForm .checkbox > input::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #777;
+  background: transporent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.Send .UploadForm .checkbox > input::after {
+  content: "✓";
+  z-index: 2;
+}
+.Send .UploadForm .checkbox > label {
+  color: #fff;
+  padding-left: 25px;
+}
+.Send .xbox {
+  position: relative;
+  left: 420px;
+  top: -300px;
+}
+.Send .BottomSend {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 810px;
+}
+
+.HP {
+  background-color: #f8f200;
+  position: relative;
+  top: 1000px;
+  width: 100%;
+  height: 676px;
+}
+.HP > .photo > .HP {
+  position: absolute;
+  top: 70px;
+  left: 120px;
+  width: 624px;
+  height: 430px;
+}
+.HP > .photo > .Cyberpunk {
+  position: absolute;
+  top: 550px;
+  left: 150px;
+}
+.HP > .description {
+  position: absolute;
+}
+.HP > .description > h1 {
+  position: absolute;
+  top: 0px;
+  left: 575px;
+  font-family: Archangelsk;
+  font-size: 48px;
+  font-weight: 700;
+}
+.HP > .description > p {
+  position: absolute;
+  top: 175px;
+  left: 800px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  width: 624px;
+  height: 125px;
+}
+.HP > .description > ul {
+  position: absolute;
+  top: 325px;
+  left: 800px;
+}
+.HP > .description > ul > li {
+  width: 500px;
+  height: 32px;
+  list-style: none;
+  margin-top: 15px;
+}
+.HP > .btn {
+  position: absolute;
+  top: 575px;
+  left: 800px;
+}
+.HP > .btn > a {
+  display: block;
+  width: 194px;
+  height: 59px;
+  padding: 19px 50px 19px 50px;
+  background-color: #000;
+  text-decoration: none;
+  color: #f8f200;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+.HP > .btn > a:hover {
+  background-color: black;
+  border-radius: 20%;
+}
+
+.BUY {
+  position: relative;
+  top: 765px;
+}
+.BUY > .photo > img {
+  position: absolute;
+  top: 155px;
+  width: 50%;
+  height: 717px;
+}
+.BUY .background {
+  position: absolute;
+  width: 60%;
+  height: 557px;
+  top: 235px;
+  left: 700px;
+  background-color: #000;
+}
+.BUY .background > .buy_game > h1 {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  color: #fff;
+  font-family: Archangelsk;
+  font-size: 32px;
+  font-weight: 400;
+}
+.BUY .background > .buy_game > p {
+  position: absolute;
+  top: 125px;
+  left: 50px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #52BEDC;
+}
+.BUY .background > .buy_game > ul {
+  position: absolute;
+  top: 175px;
+  left: 50px;
+}
+.BUY .background > .buy_game > ul > li {
+  margin-top: 15px;
+  width: 400px;
+  height: 31px;
+}
+.BUY .background > .buy_game > ul > li > span {
+  position: absolute;
+  left: 50px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.BUY .background > .choose_platform > p {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  color: #52BEDC;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+.BUY .background > .choose_platform > img {
+  position: absolute;
+  top: 400px;
+  left: 50px;
+}
+
+.footer {
+  position: relative;
+}
+.footer .mainfooter {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 1555px;
+  background-color: #fff;
+}
+.footer .mainfooter > img {
+  margin-right: 50px;
+}
+.footer .mainfooter > img > .logo {
+  position: absolute;
+  left: 300px;
+}
+.footer .mainfooter > img > .red {
+  position: absolute;
+  left: 300px;
+}
+.footer .mainfooter > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .mainfooter > ul > li {
+  margin-right: 50px;
+  text-decoration: none;
+}
+.footer .mainfooter > ul > li > a {
+  position: absolute;
+  display: block;
+  top: 25px;
+  left: 1000px;
+  text-decoration: none;
+}
+.footer > .copyright {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 1650px;
+  background-color: #000;
+}
+.footer > .copyright > p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
